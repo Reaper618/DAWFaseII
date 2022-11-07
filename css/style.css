@@ -1,0 +1,100 @@
+.form-group {
+    text-align: center;
+    margin: auto 20% auto;
+}
+
+
+body{
+    background: linear-gradient(#000000 2%, #00000028 98%), url(../img/home.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1,h6{
+    color: whitesmoke;
+}
+
+
+.logo {
+  height: 100px;
+  width: 100%;
+  background: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+img{
+    object-fit: cover;
+    height: 100%;
+    width: 10%;
+    float: left;
+}
+
+.logo h1{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.calcBtn {
+    font: 15%;
+    width: 20%;
+    height: 50px;    
+    margin-bottom: 10px;
+}
+
+#menu {
+    margin-top: 10px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;    
+}
+
+#botones {
+    padding: 0px;
+    width: 100%;
+    height: 100%;  
+    font-size: 50px;
+    justify-content: center;
+    text-align: center
+}
+
+#tabs{
+    margin: 2%;
+    border-bottom: 1px solid #000;
+}
+
+#tabBoton{
+    margin: 2%;
+    margin-bottom: 0;
+    border: 1px solid #000;
+    border-bottom-color: transparent
+}
+
+@media (max-width: 780px) {
+
+.logo img{
+    object-fit: cover;
+    height: 0%;
+    width: 0%;
+    float: right;
+}
+
+.logo h1{
+    font-size: 35px;
+    padding-top: 20px;
+}
+
+.container h1 {
+    font-size: 30px;
+}
+
+}
+
+#infCuenta{
+    color: white;
+    width: 100%;
+    text-align: center;
+}
