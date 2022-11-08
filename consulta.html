@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,6 +9,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Chartsjs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/scripts.js"></script>
+
+
 
     <title>Bienvenido a Banco Pokemon</title>
     <style>
@@ -16,82 +22,31 @@
     </style>
 </head>
 
-<body>
-    <div class= logo>
+<body onload="checkSaldo()">
+    <div class=logo>
         <img src="img/logo.png">
-    <div>
-        <h1>BIENVIENIDO A BANCO POKEMON</h1>
-    </div>
+        <div>
+            <h1>BIENVIENIDO A BANCO POKEMON</h1>
+        </div>
     </div>
     <br><br>
     <h1 align="center">Estado de cuenta</h1>
     <br><br>
     <br>
-    <br>
-    <ul class="nav nav-tabs" id="tabs">
-        <li class="active" id="tabBoton"><a data-toggle="tab" href="#home">Historial</a></li>
-        <li id="tabBoton"><a data-toggle="tab" href="#menu1">Retenidos</a></li>
-    </ul>
+    <h1 align="center">Saldo: $<span id="saldo"></span></h1>
 
-    <div class="tab-content">
-        <div id="home" class="tab-pane fade in active">
-            <h3>Historial de transacciones</h3>
-            <table class="table table-dark">
-                <!-- Tabla placeholder -->
-                <thead>
-                    <tr>
-                        <th scope="col">Tipo de transacción</th>
-                        <th scope="col">Monto</th>
-                        <th scope="col">Descriptor de compra</th>
-                        <th scope="col">Fecha</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Débito</th>
-                        <td>$15.78</td>
-                        <td>BUFFALO WINGS</td>
-                        <td>5 SEPT 16:42</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Débito</th>
-                        <td>$24.54</td>
-                        <td>SUPER SELECTOS</td>
-                        <td>10 SEPT 10:48</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Pago de planilla</th>
-                        <td>$400</td>
-                        <td>---</td>
-                        <td>15 SEPT 10:00</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div id="menu1" class="tab-pane fade">
-            <h3>Saldo retenido</h3>
-            <table class="table table-dark">
-                <!-- Tabla placeholder -->
-                <thead>
-                    <tr>
-                        <th scope="col">Tipo de transacción</th>
-                        <th scope="col">Monto</th>
-                        <th scope="col">Descriptor de compra</th>
-                        <th scope="col">Fecha</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Debito</th>
-                        <td>$4.75</td>
-                        <td>WENDYS</td>
-                        <td>16 SEPT 18:05</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+    <br><br>
+    <div>
+        <canvas id="myChart"></canvas>
     </div>
 
+    <script>
+        const myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );
+    </script>
+    <br><br>
     <div class="col-md-2"><a href="home.html" style="" class="btn btn-danger btn-lg returnCardButton">Regresar</a></div>
 
 
