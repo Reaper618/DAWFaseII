@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body onload="checkSaldo">
     <div class=logo>
         <img src="img/logo.png">
         <div>
@@ -38,5 +38,8 @@
             <div class="col-md-2"><a href="index.html" style="" class="btn btn-danger btn-lg returnCardButton">Regresar</a></div>
         </div>
     </div>
+	<!-- Para testing, borrar localstorage -->
+	            <div class="col-sm-4"><a onclick="testClear()" style="" class="btn btn-primary btn-lg largeMenuButton">BORRAR LOCALSTORAGE</a></div>
     <script src="js/scripts.js"></script>
+
 </body></html>
