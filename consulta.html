@@ -22,7 +22,7 @@
     </style>
 </head>
 
-<body onload="checkSaldo()">
+<body onload="checkSaldo();loadNum();loadPorc();">
     <div class=logo>
         <img src="img/logo.png">
         <div>
@@ -37,15 +37,15 @@
 
     <br><br>
     <div>
-        <canvas id="myChart"></canvas>
+		 <h1> Numero de transacciones realizadas</h1>
+        <canvas id="nTrans"></canvas>
+    </div>
+<br>
+	    <div>
+			 <h1> Montos totales de ingresos y de retiros realizados </h1>
+        <canvas id="porcentajes"></canvas>
     </div>
 
-    <script>
-        const myChart = new Chart(
-            document.getElementById('myChart'),
-            config
-        );
-    </script>
     <br><br>
     <div class="col-md-2"><a href="home.html" style="" class="btn btn-danger btn-lg returnCardButton">Regresar</a></div>
 
