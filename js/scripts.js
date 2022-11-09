@@ -66,6 +66,8 @@ swal("Se ha realizado el deposito, deseas generar un comprobante?", {
     if (str1 == "") {
         swal("Error", "Ingresa un valor", "error");
     }
+	        document.getElementById("InputMonto").value = "";
+
 }
 
 function input1(e) { //Revisara el valor en el input y si es menor de 5, entonces agregara al final el valor del boton presionado
@@ -127,6 +129,8 @@ swal("Se ha realizado el retiro, deseas generar un comprobante?", {
     if (str1 == "") {
         swal("Error", "Ingresa un valor", "error");
     }
+	        document.getElementById("InputMonto").value = "";
+
 }
 
 function testClear() {
