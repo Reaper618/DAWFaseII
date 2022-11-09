@@ -98,3 +98,8 @@ img{
     width: 100%;
     text-align: center;
 }
+
+#nTrans,#porcentajes{
+	background-color: #F1F1F1;
+	margin:5%;
+}
