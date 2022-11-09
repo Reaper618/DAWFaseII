@@ -181,8 +181,8 @@ const config = {
 
 function loadPorc(){ //carga tabla de % de gastos
 const labels = [
-            'Depositos',
-            'Retiros',
+            'Depositos totales',
+            'Retiros totales',
         ];
 
 const data = {
