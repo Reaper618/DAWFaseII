@@ -191,7 +191,7 @@ const data = {
         label: '% de transacciones',
         backgroundColor: 'rgb(255, 255, 132)',
         borderColor: 'rgb(255, 99, 132)',
-        data: [window.localStorage.getItem("totalIngresos"),window.localStorage.getItem("totalRetiros")],
+        data: [window.localStorage.getItem("saldo"),window.localStorage.getItem("totalRetiros")],
 
             }]
 };
